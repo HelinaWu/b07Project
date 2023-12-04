@@ -58,7 +58,6 @@ public class LoginPresenterTest {
         boolean isAdmin = true;
 
         doAnswer((Answer<Void>) invocation -> {
-            // Simulate the onLoginError callback
             ((LoginModel.OnLoginFinishedListener) invocation.getArgument(2)).onLoginError();
             return null;
         }).when(mockModel).authenticateUser(any(String.class), any(String.class), any(LoginModel.OnLoginFinishedListener.class));

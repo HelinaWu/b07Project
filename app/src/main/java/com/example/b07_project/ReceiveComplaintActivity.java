@@ -22,7 +22,7 @@ public class ReceiveComplaintActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive_complaint);
 
-        Button backToMainButton = findViewById(R.id.backToMainButton);
+        Button backToMainButton = findViewById(R.id.backToPostButton);
         complaintsReference = FirebaseDatabase.getInstance().getReference().child("complaints");
 
         ListView complaintsListView = findViewById(R.id.complaintsListView);
@@ -35,10 +35,6 @@ public class ReceiveComplaintActivity extends AppCompatActivity {
         adapter = new FirebaseListAdapter<ComplaintModel>(options) {
             @Override
             protected void populateView(View v, ComplaintModel model, int position) {
-                // Populate the list item view with complaint data
-                // This method is called for each item in the database
-                // Use 'model' to access the ComplaintModel data
-                // For example, if you're using a TextView:
                 TextView textView = v.findViewById(android.R.id.text1);
                 textView.setText(model.getComment());
             }

@@ -59,7 +59,6 @@ public class RegisterPresenterTest {
         boolean isAdmin = false;
 
         doAnswer(invocation -> {
-            // Simulate the OnStudentRegister callback
             ((RegisterModel.OnRegisterListener) invocation.getArgument(2)).OnStudentRegister();
             return null;
         }).when(mockModel).createUserAndPass(anyString(), anyString(), any(RegisterModel.OnRegisterListener.class));
@@ -75,7 +74,6 @@ public class RegisterPresenterTest {
         boolean isAdmin = false;
 
         doAnswer(invocation -> {
-            // Simulate the OnFailedRegister callback
             ((RegisterModel.OnRegisterListener) invocation.getArgument(2)).OnFailedRegister();
             return null;
         }).when(mockModel).createUserAndPass(anyString(), anyString(), any(RegisterModel.OnRegisterListener.class));
