@@ -8,3 +8,13 @@ Planned
 Anish
 Done
 - Finished final doc
+
+RJ:
+Done
+- Watched vidoes on Firebase Authenticator
+- Created a node when user RSVP in Realtime Database
+- Store the event keys in the node of a corresponding student authentication uid
+- Ensure the code is working properly
+Planned
+- Fix User Story #1
+- Do more testing on User Story #5&6
