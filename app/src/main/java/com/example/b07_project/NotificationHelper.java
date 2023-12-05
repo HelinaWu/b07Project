@@ -7,7 +7,6 @@ import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.b07_project.NotificationItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,6 @@ public class NotificationHelper {
     private static int notificationId = 0;
 
     public static void showEventNotification(Context context, String eventName, String eventDetails) {
-        // ... (existing code)
 
         // Create a NotificationItem and add it to the list
         NotificationItem eventNotification = new NotificationItem(eventName, eventDetails);
@@ -33,7 +31,6 @@ public class NotificationHelper {
     }
 
     public static void showAnnouncementNotification(Context context, String title, String announcement) {
-        // ... (existing code)
 
         // Create a NotificationItem and add it to the list
         NotificationItem announcementNotification = new NotificationItem(title, announcement);

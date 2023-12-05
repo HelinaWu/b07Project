@@ -1,4 +1,3 @@
-// NotificationsActivity.java
 package com.example.b07_project;
 
 import android.os.Bundle;
